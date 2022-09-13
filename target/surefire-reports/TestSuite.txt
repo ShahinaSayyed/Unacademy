@@ -1,0 +1,33 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 1.155 s <<< FAILURE! - in TestSuite
+runner.MyRunner.runScenario["Login with valid credentials", "User Login"](1)  Time elapsed: 0.063 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "this.prop" is null
+	at stepdefinations.Login.open_the_application_in_any_browser_for_login(Login.java:43)
+	at ✽.Open the application in any browser for login(file:///C:/Users/SHAHSAYY/New%20folder/unacademy/src/test/java/features/Login.feature:6)
+
+runner.MyRunner.runScenario["Login with invalid credentials", "User Login"](2)  Time elapsed: 0.019 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "this.prop" is null
+	at stepdefinations.Login.open_the_application_in_any_browser_for_login(Login.java:43)
+	at ✽.Open the application in any browser for login(file:///C:/Users/SHAHSAYY/New%20folder/unacademy/src/test/java/features/Login.feature:6)
+
+runner.MyRunner.runScenario["Logging out", "User Logout"](3)  Time elapsed: 0.028 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at pageobject.LoginPage.clickonLoginButton(LoginPage.java:30)
+	at stepdefinations.Logout.that_user_have_loggedin_to_the_unacademy_page(Logout.java:46)
+	at ✽.that user have loggedin to the unacademy page(file:///C:/Users/SHAHSAYY/New%20folder/unacademy/src/test/java/features/Logout.feature:7)
+
+runner.MyRunner.runScenario["Signin with existing account credentials", "User Signin"](4)  Time elapsed: 0.02 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "this.prop" is null
+	at stepdefinations.Signin.open_the_application_in_any_browser_for_signin(Signin.java:41)
+	at ✽.Open the application in any browser for signin(file:///C:/Users/SHAHSAYY/New%20folder/unacademy/src/test/java/features/Signin.feature:7)
+
+runner.MyRunner.runScenario["Signin with invalid account credentials", "User Signin"](5)  Time elapsed: 0.018 s  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "java.util.Properties.getProperty(String)" because "this.prop" is null
+	at stepdefinations.Signin.open_the_application_in_any_browser_for_signin(Signin.java:41)
+	at ✽.Open the application in any browser for signin(file:///C:/Users/SHAHSAYY/New%20folder/unacademy/src/test/java/features/Signin.feature:7)
+
